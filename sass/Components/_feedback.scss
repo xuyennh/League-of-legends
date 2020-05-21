@@ -1,0 +1,57 @@
+.feedback {
+    padding: 5rem;
+    font-size: $defaul-font-size;
+    box-shadow: 0 3rem 6rem rgba($color-black, .15);
+    background-color: rgba($color-white, 1);
+    padding-left: 9rem;
+    margin-bottom: 5rem;
+    opacity: .8;
+    transform: skewX(-12deg);
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        background-color: orangered;
+        float: left;
+        position: relative;
+
+        clip-path: circle(50% at 50% 50%);
+        transform: translate(-3rem);
+        transform: skewX(12deg);
+        margin-top: -1rem;
+        margin-right: 4rem;
+
+        shape-outside: circle(50% at 50% 50%);
+    }
+
+    &__text {
+        transform: skewX(12deg);
+    }
+
+    &__image {
+        height: 100%;
+        transform: scale(1.4);;
+        transition: all .3s;
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        opacity: 0;
+        text-align: center;
+        transition: all .3s;
+    }
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__image {
+        filter: blur(.5rem) brightness(70%);
+        transform: scale(1.05);
+    }
+}

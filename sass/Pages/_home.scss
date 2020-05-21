@@ -1,0 +1,33 @@
+section {
+    padding: 20rem 0;
+}
+.section-about {
+    background-color: $color-grey-light-1;
+    margin-top: -20rem;
+}
+
+.section-skills {
+    position: relative;
+    background-image: linear-gradient(to right bottom,
+    rgba($color-primary-light, .8), 
+    rgba($color-primary-dark, .8)),
+    url('../img/anhnen.jpg');
+    // clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+}
+
+.section-skin {
+    background-color: $color-grey-light-1;
+    margin-top: -5rem;
+}
+
+.section-feedbacks {
+    position: relative;
+    padding: 15rem 0;
+}
+
+.section-contact {
+    background-image:
+    linear-gradient(to right bottom,
+    rgba($color-primary-light, .8),
+    rgba($color-primary-dark, .8)),
+}
